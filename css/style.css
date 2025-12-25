@@ -1,3 +1,6 @@
+/* =========================
+   Base
+   ========================= */
 
 body {
   margin: 0;
@@ -5,6 +8,7 @@ body {
   color: #111827;
   background-color: #f9fafb;
 }
+
 nav {
   position: sticky;
   top: 0;
@@ -12,6 +16,11 @@ nav {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
 }
+
+/* =========================
+   Navigation
+   ========================= */
+
 .nav-inner {
   max-width: 960px;
   margin: 0 auto;
@@ -20,6 +29,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .brand-dot {
   width: 10px;
   height: 10px;
@@ -28,114 +38,61 @@ nav {
   display: inline-block;
   margin-right: 6px;
 }
+
 .nav-links a {
   margin-left: 14px;
   text-decoration: none;
   color: #4b5563;
   font-size: 0.95rem;
 }
+
 .nav-links a:hover {
   color: #111827;
 }
+
+/* =========================
+   Layout
+   ========================= */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 32px 16px;
 }
+
+.section h1 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   Hero
+   ========================= */
+
 .hero {
   background: #eef2ff;
 }
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   gap: 32px;
   align-items: center;
 }
+
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 8px;
 }
+
 .hero p {
   line-height: 1.6;
 }
+
 .accent {
   color: #4f46e5;
 }
-.badges {
-  margin-top: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.badge {
-  background: #e5e7eb;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-}
-.cta-row {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.btn {
-  border-radius: 999px;
-  padding: 8px 16px;
-  border: 1px solid #4f46e5;
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #4f46e5;
-  background: #ffffff;
-}
-.btn.primary {
-  background: #4f46e5;
-  color: #ffffff;
-}
-.section h1 {
-  font-size: 1.6rem;
-  margin-bottom: 16px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 16px;
-}
-.card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 18px 18px 16px;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
-}
-.card h3 {
-  margin-top: 0;
-}
-.card .meta {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-bottom: 8px;
-}
-.card ul {
-  padding-left: 20px;
-}
-.media.award {
-  width: 100%;
-  height: 300px;              
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-.media.award img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;   
-}
-.media.project img {
-  max-width: 60px;
-}
+
 .hero-image-placeholder {
   border-radius: 999px;
   width: 180px;
@@ -147,14 +104,138 @@ nav {
   color: #6b7280;
   font-size: 0.9rem;
 }
+
+/* =========================
+   Buttons / Badges
+   ========================= */
+
+.badges {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background: #e5e7eb;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.cta-row {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 8px 16px;
+  border: 1px solid #4f46e5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #4f46e5;
+  background: #ffffff;
+}
+
+.btn.primary {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+/* =========================
+   Cards & Grid
+   ========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.card h3 {
+  margin: 0 0 4px;
+}
+
+.card .meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+/* =========================
+   Media (Images)
+   ========================= */
+
+/* Logos (Experience, Companies) */
+.media.logo img {
+  max-width: 56px;
+  height: auto;
+}
+
+/* Project thumbnails / icons */
+.media.project img {
+  max-width: 72px;
+  height: auto;
+}
+
+/* Awards – LARGE, CERTIFICATE-STYLE */
+.media.award {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.media.award img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
 footer {
   text-align: center;
   padding: 18px;
   font-size: 0.8rem;
   color: #6b7280;
 }
+
+/* =========================
+   Responsive
+   ========================= */
+
 @media (max-width: 768px) {
   .hero-grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Better card layout on desktop */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
