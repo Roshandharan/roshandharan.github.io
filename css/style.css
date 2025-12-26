@@ -93,22 +93,27 @@ nav {
   color: #4f46e5;
 }
 
-/* === UPDATED HERO IMAGE (ONLY CHANGE) === */
+/* === UPDATED HERO IMAGE (SQUARE, FITTED) === */
 
-.hero-image {
-  width: 220px;
-  height: 220px;
-  border-radius: 999px;
-  overflow: hidden;
-  flex-shrink: 0;
-  justify-self: center;
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-image img {
-  width: 100%;
-  height: 100%;
+/* Hide placeholder without touching HTML */
+.hero-image-placeholder {
+  display: none;
+}
+
+.hero-image {
+  width: 260px;
+  height: 260px;
   object-fit: cover;
   object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  flex-shrink: 0;
 }
 
 /* =========================
@@ -237,10 +242,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  /* HERO IMAGE MOBILE TWEAK */
   .hero-image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
   }
 }
