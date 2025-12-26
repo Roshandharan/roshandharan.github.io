@@ -107,12 +107,12 @@ nav {
 }
 
 .hero-image {
-  width: 260px;
-  height: 260px;
+  width: 320px;
+  height: 420px; /* extends vertically to match text block */
   object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  object-position: center top;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
   flex-shrink: 0;
 }
 
@@ -241,10 +241,11 @@ footer {
   .hero-grid {
     grid-template-columns: 1fr;
   }
-
+}
+@media (max-width: 768px) {
   .hero-image {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 320px;
     margin: 0 auto;
   }
 }
