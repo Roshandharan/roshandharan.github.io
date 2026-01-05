@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0b1020" />
+<title>Projects | Roshan Dharan</title>
+<meta name="description" content="Projects portfolio — filtering and search enabled." />
+<link rel="canonical" href="https://roshandharan.github.io/projects.html" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta property="og:title" content="Projects | Roshan Dharan" />
+<meta property="og:description" content="Projects portfolio — filtering and search enabled." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/og-image.png" />
+<meta property="og:url" content="https://roshandharan.github.io/projects.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Roshan Dharan Shashidharan", "url": "https://roshandharan.github.io/projects.html", "sameAs": ["https://www.linkedin.com/in/roshan-dharan", "https://github.com/Roshandharan"], "jobTitle": "Software Engineer / Data & Healthcare Analytics", "affiliation": [{"@type": "Organization", "name": "University of Southern California"}]}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<nav aria-label="Primary navigation">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Roshan Dharan home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <strong>Roshan Dharan</strong>
+    </a>
+
+    <div class="nav-actions">
+      <button class="icon-btn hamburger" id="navToggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="awards.html">Awards</a>
+        <a href="resume.html">Resume</a>
+      </div>
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        ◐
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="content">
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <h2>Projects</h2>
+        <p>Search, filter, and sort across personal builds, enterprise healthcare reporting, and analytics deliverables.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <span class="meta" id="projectCount" aria-live="polite"></span>
+        <a class="btn" href="experience.html">Experience</a>
+        <a class="btn primary" href="resume.html">Resume</a>
+      </div>
+    </div>
+
+    <div class="toolbar reveal" role="search">
+      <input class="input" id="projectSearch" type="search" placeholder="Search projects (press / to focus)..." aria-label="Search projects" />
+      <select class="select" id="projectSort" aria-label="Sort projects">
+        <option value="recent">Sort: most recent</option>
+        <option value="oldest">Sort: oldest</option>
+        <option value="name">Sort: name</option>
+      </select>
+    </div>
+
+    <div id="tagPills" class="pills reveal" aria-label="Filter projects by tags">
+      <button class="pill" type="button" aria-pressed="false" data-tag="Oracle Health">Oracle Health</button><button class="pill" type="button" aria-pressed="false" data-tag="Oracle Cerner">Oracle Cerner</button><button class="pill" type="button" aria-pressed="false" data-tag="REVA University">REVA University</button><button class="pill" type="button" aria-pressed="false" data-tag="Sklearn">Sklearn</button><button class="pill" type="button" aria-pressed="false" data-tag="PyTorch">PyTorch</button><button class="pill" type="button" aria-pressed="false" data-tag="Streamlit">Streamlit</button><button class="pill" type="button" aria-pressed="false" data-tag="Personal">Personal</button><button class="pill" type="button" aria-pressed="false" data-tag="Python">Python</button><button class="pill" type="button" aria-pressed="false" data-tag="Deep Learning">Deep Learning</button>
+    </div>
+
+    <div class="grid" id="projectsRoot" aria-label="Project cards">
+      
+    <article class="card reveal" data-title="ICU Outcome Prediction" data-meta="Sklearn • PyTorch • Streamlit • Jan 2025 – May 2025 • Personal project" data-tags="Sklearn|PyTorch|Streamlit|Personal" data-order="2001">
+      <button class="media project" data-modal="image" data-title="ICU Outcome Prediction" data-desc="Sklearn • PyTorch • Streamlit • Jan 2025 – May 2025 • Personal project" data-src="assets/icu-project.png" aria-label="Open preview for ICU Outcome Prediction">
+        <img src="assets/icu-project.png" alt="ICU Outcome Prediction cover" loading="lazy" />
+      </button>
+      <h3>ICU Outcome Prediction</h3>
+      <div class="meta">Sklearn • PyTorch • Streamlit • Jan 2025 – May 2025 • Personal project</div>
+      <p style="margin-top:10px;">Built a multimodal ICU outcome predictor combining LSTM vital sign modeling with BioClinicalBERT embeddings of clinical notes.</p>
+      <ul>
+        <li>Implemented TF-IDF feature extraction from 5,000+ clinical note features with logistic regression as a baseline and improved AUROC by 6–8% over NLP-only models.</li><li>Designed end-to-end ML workflows and deployed the model as a REST API service with CI/CD integration for reproducibility.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="340B Extract – Split Transaction File | Verity Solutions" data-meta="Oracle Health • Jan 2025 – Mar 2025" data-tags="Oracle Health" data-order="2001">
+      <button class="media project" data-modal="image" data-title="340B Extract – Split Transaction File | Verity Solutions" data-desc="Oracle Health • Jan 2025 – Mar 2025" data-src="assets/project-placeholder.png" aria-label="Open preview for 340B Extract – Split Transaction File | Verity Solutions">
+        <img src="assets/project-placeholder.png" alt="340B Extract – Split Transaction File | Verity Solutions cover" loading="lazy" />
+      </button>
+      <h3>340B Extract – Split Transaction File | Verity Solutions</h3>
+      <div class="meta">Oracle Health • Jan 2025 – Mar 2025</div>
+      <p style="margin-top:10px;">Developed and maintained a detailed extract capturing medication dispenses at eligible facility locations, classifying each dispense (Inpatient, Outpatient, Medicaid/WAC) to ensure 340B compliance.</p>
+      <ul>
+        <li>Modeled 25 core dispense data points and 14 auxiliary attributes (dose, strength, volume, quantity, 340B quantity) to support Verity processing.</li><li>Delivered encrypted .txt files via MoveIt and exposed the extract through a reporting portal for ad-hoc execution, saving ~114 hours/year and driving more than $12M/year in pharmacy drug spend savings.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="CLABSI Audit Report | Central Line–Associated Bloodstream Infection" data-meta="Oracle Health • Jan 2025 – Mar 2025" data-tags="Oracle Health" data-order="2001">
+      <button class="media project" data-modal="image" data-title="CLABSI Audit Report | Central Line–Associated Bloodstream Infection" data-desc="Oracle Health • Jan 2025 – Mar 2025" data-src="assets/project-placeholder.png" aria-label="Open preview for CLABSI Audit Report | Central Line–Associated Bloodstream Infection">
+        <img src="assets/project-placeholder.png" alt="CLABSI Audit Report | Central Line–Associated Bloodstream Infection cover" loading="lazy" />
+      </button>
+      <h3>CLABSI Audit Report | Central Line–Associated Bloodstream Infection</h3>
+      <div class="meta">Oracle Health • Jan 2025 – Mar 2025</div>
+      <p style="margin-top:10px;">Built a report providing comprehensive information on patients with central lines and associated continuous infusions to support CLABSI auditing and patient safety.</p>
+      <ul>
+        <li>Captured 18 critical data points including line type, dressing activity, number of lumens, infusion status per lumen, site care, and cap change timestamps over specific clinical lookback windows.</li><li>Implemented a new query design that allocates and deallocates memory within subqueries and stores data in a 2D array for efficient PDF generation and structured output.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="HIDI Extract | District of Columbia Hospital Association" data-meta="Oracle Health • Sep 2024 – Dec 2024" data-tags="Oracle Health" data-order="2009">
+      <button class="media project" data-modal="image" data-title="HIDI Extract | District of Columbia Hospital Association" data-desc="Oracle Health • Sep 2024 – Dec 2024" data-src="assets/project-placeholder.png" aria-label="Open preview for HIDI Extract | District of Columbia Hospital Association">
+        <img src="assets/project-placeholder.png" alt="HIDI Extract | District of Columbia Hospital Association cover" loading="lazy" />
+      </button>
+      <h3>HIDI Extract | District of Columbia Hospital Association</h3>
+      <div class="meta">Oracle Health • Sep 2024 – Dec 2024</div>
+      <p style="margin-top:10px;">Developed a data collection and reporting solution for UB-04 claims under DCHA requirements using structured record types (A–G) based on HIDI specifications.</p>
+      <ul>
+        <li>Orchestrated one driver script controlling six modular scripts with a shared data structure to ensure modularity and maintainability.</li><li>Captured 70+ data points with <2% error rate across patient, charge, insurance, and clinical data and delivered standardized files quarterly to an SFTP site.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="MedeAnalytics | Patient Account, Charges, Transaction, UCRN Files" data-meta="Oracle Health • Sep 2024 – Dec 2024" data-tags="Oracle Health" data-order="2009">
+      <button class="media project" data-modal="image" data-title="MedeAnalytics | Patient Account, Charges, Transaction, UCRN Files" data-desc="Oracle Health • Sep 2024 – Dec 2024" data-src="assets/project-placeholder.png" aria-label="Open preview for MedeAnalytics | Patient Account, Charges, Transaction, UCRN Files">
+        <img src="assets/project-placeholder.png" alt="MedeAnalytics | Patient Account, Charges, Transaction, UCRN Files cover" loading="lazy" />
+      </button>
+      <h3>MedeAnalytics | Patient Account, Charges, Transaction, UCRN Files</h3>
+      <div class="meta">Oracle Health • Sep 2024 – Dec 2024</div>
+      <p style="margin-top:10px;">Engineered SQL pipelines generating patient accounting data files (Patient Account, Charges, Transaction, UCRN) consumed by MedeAnalytics.</p>
+      <ul>
+        <li>Delivered nine files daily to SFTP with approximately 600,000 records, supporting detailed financial tracking and reporting.</li><li>Optimized queries via batching of qualified rows within subqueries to ensure consistent performance at scale.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="Power BI Report Migration from On-Premise to Snowflake" data-meta="Oracle Cerner • May 2023 – Jun 2023" data-tags="Oracle Cerner" data-order="2005">
+      <button class="media project" data-modal="image" data-title="Power BI Report Migration from On-Premise to Snowflake" data-desc="Oracle Cerner • May 2023 – Jun 2023" data-src="assets/project-placeholder.png" aria-label="Open preview for Power BI Report Migration from On-Premise to Snowflake">
+        <img src="assets/project-placeholder.png" alt="Power BI Report Migration from On-Premise to Snowflake cover" loading="lazy" />
+      </button>
+      <h3>Power BI Report Migration from On-Premise to Snowflake</h3>
+      <div class="meta">Oracle Cerner • May 2023 – Jun 2023</div>
+      <p style="margin-top:10px;">Migrated associate- and project-centric Power BI reports from on-prem/SharePoint sources to Snowflake, rebuilding all KPIs and calculations using DAX.</p>
+      <ul>
+        <li>Centralized cloud-sourced data into a single Power BI repository instead of scattered on-prem datasets, simplifying governance and refresh logic.</li><li>Reimplemented key reports including Program Dashboard, Associate Assignments, Project Plan Compliance, Tasks Due/Overdue, and Planning Variance.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="Web Automation Using Selenium" data-meta="Oracle Cerner • Jan 2023 – Jun 2023" data-tags="Oracle Cerner" data-order="2001">
+      <button class="media project" data-modal="image" data-title="Web Automation Using Selenium" data-desc="Oracle Cerner • Jan 2023 – Jun 2023" data-src="assets/project-placeholder.png" aria-label="Open preview for Web Automation Using Selenium">
+        <img src="assets/project-placeholder.png" alt="Web Automation Using Selenium cover" loading="lazy" />
+      </button>
+      <h3>Web Automation Using Selenium</h3>
+      <div class="meta">Oracle Cerner • Jan 2023 – Jun 2023</div>
+      <p style="margin-top:10px;">Automated ingestion of offline project data (Excel) into web-based systems using Selenium WebDriver.</p>
+      <ul>
+        <li>Applied multithreading to accelerate navigation and form submission across complex multi-field pages.</li><li>Eliminated manual data entry and saved approximately 44.16 hours for every 1,000 rows processed.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="AI-Powered Battery Management System" data-meta="Python • Deep Learning • May 2023 – Nov 2023" data-tags="Python|Deep Learning" data-order="2005">
+      <button class="media project" data-modal="image" data-title="AI-Powered Battery Management System" data-desc="Python • Deep Learning • May 2023 – Nov 2023" data-src="assets/battery-project.png" aria-label="Open preview for AI-Powered Battery Management System">
+        <img src="assets/battery-project.png" alt="AI-Powered Battery Management System cover" loading="lazy" />
+      </button>
+      <h3>AI-Powered Battery Management System</h3>
+      <div class="meta">Python • Deep Learning • May 2023 – Nov 2023</div>
+      <p style="margin-top:10px;">Engineered deep learning models predicting EV battery State of Charge (SoC) and State of Health (SoH) across 5,000+ charging cycles.</p>
+      <ul>
+        <li>Enabled adaptive eco-charging strategies that extend battery life and improve overall system efficiency.</li><li>Published results in the International Journal of Computational Learning & Intelligence (2023).</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="Face Mask Detection Using TensorFlow and Python" data-meta="REVA University • Oct 2021 – Nov 2021" data-tags="REVA University" data-order="2010">
+      <button class="media project" data-modal="image" data-title="Face Mask Detection Using TensorFlow and Python" data-desc="REVA University • Oct 2021 – Nov 2021" data-src="assets/project-placeholder.png" aria-label="Open preview for Face Mask Detection Using TensorFlow and Python">
+        <img src="assets/project-placeholder.png" alt="Face Mask Detection Using TensorFlow and Python cover" loading="lazy" />
+      </button>
+      <h3>Face Mask Detection Using TensorFlow and Python</h3>
+      <div class="meta">REVA University • Oct 2021 – Nov 2021</div>
+      <p style="margin-top:10px;">Built an object detection model trained on labeled images to classify faces with and without masks.</p>
+      <ul>
+        <li>Integrated the model into a real-time inference pipeline capable of detecting face mask usage from live video feeds.</li>
+      </ul>
+    </article>
+    
+    <article class="card reveal" data-title="Blood Bank Management Using AWS" data-meta="REVA University • Feb 2022 – Apr 2022" data-tags="REVA University" data-order="2002">
+      <button class="media project" data-modal="image" data-title="Blood Bank Management Using AWS" data-desc="REVA University • Feb 2022 – Apr 2022" data-src="assets/project-placeholder.png" aria-label="Open preview for Blood Bank Management Using AWS">
+        <img src="assets/project-placeholder.png" alt="Blood Bank Management Using AWS cover" loading="lazy" />
+      </button>
+      <h3>Blood Bank Management Using AWS</h3>
+      <div class="meta">REVA University • Feb 2022 – Apr 2022</div>
+      <p style="margin-top:10px;">Deployed a Blood Bank Management System using Amazon Lightsail with configuration via Remote Desktop Protocol (RDP).</p>
+      <ul>
+        <li>Configured inbound rules, HTTP host headers, and related settings to securely host and expose the web application.</li><li>Demonstrated end-to-end deployment and basic DevOps practices on AWS.</li>
+      </ul>
+    </article>
+    
+    </div>
+
+    <hr class="sep" />
+
+    <article class="card reveal">
+      <h3>Notes</h3>
+      <p>
+        The projects above include a mix of personal work, academic work, and enterprise healthcare reporting deliverables.
+        To share a deeper case study, you can add a short “Problem → Approach → Impact” write-up and link it from each card.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <header>
+      <strong id="modalTitle">Preview</strong>
+      <button class="icon-btn" id="modalClose" type="button" aria-label="Close preview">✕</button>
+    </header>
+    <div class="body">
+      <img id="modalImg" src="" alt="" />
+      <p id="modalDesc" style="margin-top:10px;"></p>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
+      <div>© 2026 Roshan Dharan. Projects.</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a class="btn" href="https://www.linkedin.com/in/roshan-dharan" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Roshandharan" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>
