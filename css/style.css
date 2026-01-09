@@ -442,7 +442,12 @@ nav{
   gap: 14px;
   align-items:center;
 }
-.timeline-head .media.logo{ width:56px; height:56px; }
+.timeline-head .media.logo{
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+}
+
 
 hr.sep{
   border:none;
